@@ -1,0 +1,68 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Nunito Sans';
+  font-size: calc(39px / var(--retina-value));
+  letter-spacing: calc(5.46px / var(--retina-value));
+  line-height: 2.62;
+  background-color: transparent;
+
+  @media (--large) {
+    font-size: 17px;
+    letter-spacing: 2.38px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+/* Primary button styles */
+  &.primary {
+    color: var(--off-white);
+
+    & svg path {
+      fill: var(--off-white);
+    }
+  }
+  
+ /* Secondary button styles */
+  &.secondary {
+    color: var(--black);
+
+    & svg path {
+      fill: var(--black);
+    }
+  }
+
+   /* Small button styles */
+  &.small {
+    font-size: calc(29px / var(--retina-value));
+    color: var(--off-white);
+
+    & svg path {
+      fill: var(--off-white);
+    }
+  }
+
+/* Small button styles */
+  &.round {
+    background-color: var(--brown);
+    color: var(--off-white);
+    border-radius: calc(57px / var(--retina-value));
+    padding: 0 calc(60px / var(--retina-value));
+
+    @media (--large) {
+      border-radius: 25px;
+      padding: 0 25px;
+    }
+  }
+
+ /** Disabled */
+   &.disabled {
+    color: grey;
+    opacity: 0.3;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+}
