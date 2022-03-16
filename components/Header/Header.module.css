@@ -12,10 +12,12 @@
   transition: all 0.3s ease-in-out;
 
   @media (--large) {
+    position: relative;
+    margin: 0 auto;
     clip-path: none;
     flex-direction: row;
     height: 80px;
-    background: black;
+    width: 1200px;
   }
 
   &__menuOpen {
@@ -56,9 +58,9 @@
     margin-bottom: 30px;
 
     @media (--large) {
-      width: 150px;
-      height: 50px;
-      margin-bottom: 0;
+      width: 200px;
+      height: 75px;
+      margin: 0 0 0 30px;
     }
   }
 
@@ -90,6 +92,14 @@
         &:hover {
           transform: scale(1.2);
         }
+
+        @media (--large) {
+          margin: 0 10px;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
       }
 
       & a {
@@ -113,6 +123,16 @@
 
       &:hover {
         transform: scale(1.2);
+      }
+
+      @media (--large) {
+        width: 150px;
+        margin: 0 10px;
+        cursor: pointer;
+
+        &:hover {
+          transform: unset;
+        }
       }
     }
   }
