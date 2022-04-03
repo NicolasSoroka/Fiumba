@@ -7,6 +7,8 @@ const FloatingFigures = () => {
       <div></div>
       <div></div>
       <div></div>
+      <div></div>
+      <div></div>
     </div>
   );
 };

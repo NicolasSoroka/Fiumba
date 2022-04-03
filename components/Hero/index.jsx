@@ -1,7 +1,6 @@
-import Image from "next/image";
 import React from "react";
+import IphoneLayout from "../IphoneLayout";
 import styles from "./Hero.module.css";
-import logo from "../../public/images/logo_color.png";
 
 const Hero = () => {
   return (
@@ -16,16 +15,12 @@ const Hero = () => {
             dolore architecto, voluptatem saepe expedita voluptates eum
           </p>
         </div>
-        <div className={styles.container__main__buttons }>
+        <div className={styles.container__main__buttons}>
           <button>Ver nuestros trabajos</button>
           <button>Contactanos!</button>
         </div>
       </div>
-      <div className={styles.container__image}>
-        <div className={styles.container__logo}>
-          <Image src={logo} layout="fill" alt="Logo" objectFit="contain" />
-        </div>
-      </div>
+      <IphoneLayout />
     </div>
   );
 };

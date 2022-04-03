@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./FloatingNav.module.css";
-import { AiOutlineHome, AiOutlineFolderOpen, AiOutlineInstagram, AiOutlineWhatsApp, AiOutlineSetting } from "react-icons/Ai";
+import { AiOutlineHome, AiOutlineFolderOpen, AiOutlineWhatsApp, AiOutlineSetting } from "react-icons/Ai";
+
 import { BsChat } from "react-icons/Bs";
 import cs from 'classnames';
 import { useState } from "react";
@@ -12,12 +13,16 @@ const FloatingNav = () => {
     setActive(number);
   };
 
+  const handleWhatsapp = () => {
+    const link = 'https://api.whatsapp.com/send?phone=1134840208';
+    window.open(link, '_blank');
+  };
+
   const indicatorClasses = cs( styles.indicator, 
     { [styles.indicator__1 ] : isActive === 1 },
     { [styles.indicator__2 ] : isActive === 2 },
     { [styles.indicator__3 ] : isActive === 3 },
-    { [styles.indicator__4 ] : isActive === 4 },
-    { [styles.indicator__5 ] : isActive === 5 });
+    { [styles.indicator__4 ] : isActive === 4 });
 
   const textClasses = cs( styles.container__icons__text, {
     [styles.container__icons__text__active] : isActive
@@ -48,16 +53,15 @@ const FloatingNav = () => {
             <span className={isActive === 3 ? textClasses : styles.container__icons__text }>Tecnologías</span>
           </a>
         </li>
-        <li className="test" onClick={()=>{handleToggle(4)}}>
+        <li onClick={()=>{handleToggle(4)}}>
           <a href="#">
             <span className={isActive === 4 ? iconClasses : styles.container__icons__icon }><BsChat/></span>
             <span className={isActive === 4 ? textClasses : styles.container__icons__text }>Contacto</span>
           </a>
         </li>
-        <li onClick={()=>{handleToggle(5)}}>
+        <li className={styles.container__icons__whatsapp} onClick={handleWhatsapp}>
           <a href="#">
-            <span className={isActive === 5 ? iconClasses : styles.container__icons__icon }><AiOutlineWhatsApp/></span>
-            <span className={isActive === 5 ? textClasses : styles.container__icons__text }>Whatsapp</span>
+            <span className={styles.container__icons__icon }><AiOutlineWhatsApp color='#25D366'/></span>
           </a>
         </li>
         <div className={indicatorClasses}></div>
