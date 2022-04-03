@@ -21,8 +21,8 @@ const Hero = () => {
           <button>Contactanos!</button>
         </div>
       </div>
-      {/* <IphoneLayout /> */}
-      <LaptopLayout/>
+      <IphoneLayout />
+      {/* <LaptopLayout/> */}
     </div>
   );
 };
