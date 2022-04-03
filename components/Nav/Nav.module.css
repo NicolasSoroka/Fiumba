@@ -1,6 +1,6 @@
 .wrapper {
   font-family: "Poppins";
-  font-weight: 200;
+  font-weight: 300;
   position: fixed;
   top: 0;
   display: flex;
@@ -105,7 +105,7 @@
         font-size: 25px;
         text-decoration: none;
         padding: 0 10px;
-        opacity: 0.8;
+        opacity: 0.7;
 
         &:after {
           content: '';

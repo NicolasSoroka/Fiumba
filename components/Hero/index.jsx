@@ -1,5 +1,6 @@
 import React from "react";
 import IphoneLayout from "../IphoneLayout";
+import LaptopLayout from "../LaptopLayout";
 import styles from "./Hero.module.css";
 
 const Hero = () => {
@@ -20,7 +21,8 @@ const Hero = () => {
           <button>Contactanos!</button>
         </div>
       </div>
-      <IphoneLayout />
+      {/* <IphoneLayout /> */}
+      <LaptopLayout/>
     </div>
   );
 };

@@ -31,7 +31,7 @@ const Nav = () => {
           src={ logoWhite }
           alt="logo fiumba"
           layout='fill'
-          objectFit='cover'
+          objectFit='contain'
         />
       </div>
       <div className={ styles.wrapper__nav}>

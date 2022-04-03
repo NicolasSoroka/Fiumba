@@ -6,4 +6,5 @@ export { default as Header } from './Header';
 export { default as FloatingFigures } from './FloatingFigures';
 export { default as IphoneLayout } from './IphoneLayout';
 export { default as FloatingNav } from './FloatingNav';
+export { default as LaptopLayout } from './LaptopLayout';
 
