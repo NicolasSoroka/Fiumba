@@ -1,9 +1,42 @@
-import React from 'react';
+import React from "react";
+import styles from "./Footer.module.css";
+import { AiOutlineMail, AiOutlinePhone } from "react-icons/Ai";
+import { BsInstagram } from "react-icons/Bs";
+
 
 const Footer = () => {
   return (
-    <div>Footer</div>
-  )
-}
+    <div className={styles.container}>
+      <div className={styles.container__waves}>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul className={ styles.container__social}>
+        <li>
+          <a href="#">
+            <BsInstagram />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <AiOutlineMail />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <AiOutlinePhone />
+          </a>
+        </li>
+      </ul>
+      <ul className={styles.container__menu}>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Services</a></li>
+      </ul>
+      <p>Since 2019 | All rights reserved.</p>
+    </div>
+  );
+};
 
 export default Footer;
