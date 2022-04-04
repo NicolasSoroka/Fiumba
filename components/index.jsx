@@ -8,3 +8,4 @@ export { default as IphoneLayout } from "./IphoneLayout";
 export { default as FloatingNav } from "./FloatingNav";
 export { default as LaptopLayout } from "./LaptopLayout";
 export { default as Divider } from "./Divider";
+export { default as AppHead } from "./AppHead";
