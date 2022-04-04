@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
       <Head>
         <style>
           @import
-          url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap');
+          url(&apos;https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap&apos;);
         </style>
         <link rel="icon" href="/favicon.ico" />
         <title>Fiumba</title>
