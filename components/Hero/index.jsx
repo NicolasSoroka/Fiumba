@@ -21,8 +21,10 @@ const Hero = () => {
           <button>Contactanos!</button>
         </div>
       </div>
-      <IphoneLayout />
-      {/* <LaptopLayout/> */}
+      <div className={styles.container__layouts}>
+        <LaptopLayout/>
+        <IphoneLayout />
+      </div>
     </div>
   );
 };
