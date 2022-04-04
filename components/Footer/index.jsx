@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Footer.module.css";
-import { AiOutlineMail, AiOutlinePhone } from "react-icons/Ai";
-import { BsInstagram } from "react-icons/Bs";
+import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
+import { BsInstagram } from "react-icons/bs";
 
 const Footer = () => {
   return (

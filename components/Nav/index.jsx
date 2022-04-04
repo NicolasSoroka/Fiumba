@@ -4,7 +4,7 @@ import styles from "./Nav.module.css";
 import logoWhite from "../../public/images/logo_full_white.png";
 import Link from "next/link";
 import { useState } from "react";
-import { RiCloseFill, RiMenuFill } from "react-icons/Ri";
+import { RiCloseFill, RiMenuFill } from "react-icons/ri";
 import cs from "classnames";
 
 const Nav = () => {
