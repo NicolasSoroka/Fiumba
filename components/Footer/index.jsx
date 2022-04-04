@@ -6,35 +6,7 @@ import { BsInstagram } from "react-icons/bs";
 const Footer = () => {
   return (
     <div className={styles.container}>
-      <ul className={styles.container__social}>
-        <li>
-          <a href="#">
-            <BsInstagram />
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <AiOutlineMail />
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <AiOutlinePhone />
-          </a>
-        </li>
-      </ul>
-      <ul className={styles.container__menu}>
-        <li>
-          <a href="">Home</a>
-        </li>
-        <li>
-          <a href="">About</a>
-        </li>
-        <li>
-          <a href="">Services</a>
-        </li>
-      </ul>
-      <p>Since 2019 | All rights reserved.</p>
+      <p>	&copy; 2022 | Fiumba</p>
     </div>
   );
 };

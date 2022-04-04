@@ -73,14 +73,14 @@ const FloatingNav = () => {
                 isActive === 2 ? iconClasses : styles.container__icons__icon
               }
             >
-              <AiOutlineFolderOpen />
+              <AiOutlineSetting />
             </span>
             <span
               className={
                 isActive === 2 ? textClasses : styles.container__icons__text
               }
             >
-              Portfolio
+              Servicios
             </span>
           </a>
         </li>
@@ -95,14 +95,14 @@ const FloatingNav = () => {
                 isActive === 3 ? iconClasses : styles.container__icons__icon
               }
             >
-              <AiOutlineSetting />
+              <AiOutlineFolderOpen />
             </span>
             <span
               className={
                 isActive === 3 ? textClasses : styles.container__icons__text
               }
             >
-              Servicios
+              Portfolio
             </span>
           </a>
         </li>
