@@ -6,11 +6,6 @@ import { BsInstagram } from "react-icons/bs";
 const Footer = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.container__waves}>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
       <ul className={styles.container__social}>
         <li>
           <a href="#">

@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "./Layout.module.css";
 import { Header, Footer, FloatingNav } from "../index";
 import { motion } from "framer-motion";
+import Divider from "../Divider";
 
 const Layout = ({ children }) => {
   return (
@@ -16,6 +17,7 @@ const Layout = ({ children }) => {
       </Head>
       <Header />
       <motion.main>{children}</motion.main>
+      <Divider/>
       <FloatingNav />
       <Footer />
     </div>
