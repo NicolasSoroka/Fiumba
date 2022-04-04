@@ -1,4 +1,5 @@
 .layout {
   margin: auto;
   background-color: black;
+  position: relative;
 }
