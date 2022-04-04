@@ -1,40 +1,37 @@
-import Image from 'next/image';
-import React from 'react';
-import styles from './Nav.module.css';
-import logoWhite from '../../public/images/logo_full_white.png'; 
-import Link from 'next/link';
-import { useState } from 'react';
-import { RiCloseFill, RiMenuFill } from 'react-icons/Ri';
-import cs from 'classnames';
+import Image from "next/image";
+import React from "react";
+import styles from "./Nav.module.css";
+import logoWhite from "../../public/images/logo_full_white.png";
+import Link from "next/link";
+import { useState } from "react";
+import { RiCloseFill, RiMenuFill } from "react-icons/Ri";
+import cs from "classnames";
 
 const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  
-  const wrapperClasses = cs( styles.wrapper, {
-    [styles.wrapper__menuOpen] : menuOpen
+
+  const wrapperClasses = cs(styles.wrapper, {
+    [styles.wrapper__menuOpen]: menuOpen,
   });
-  
-  const menuBtnClasses = cs( styles.wrapper__menuBtn, {
-    [styles.wrapper__menuBtn__menuOpen] : menuOpen
+
+  const menuBtnClasses = cs(styles.wrapper__menuBtn, {
+    [styles.wrapper__menuBtn__menuOpen]: menuOpen,
   });
 
   return (
-    <div className={ wrapperClasses }>
-      <div className={ menuBtnClasses } onClick={ () => setMenuOpen(!menuOpen)}>
-        { menuOpen ?
-          <RiCloseFill/>
-          : <RiMenuFill/>
-        }
+    <div className={wrapperClasses}>
+      <div className={menuBtnClasses} onClick={() => setMenuOpen(!menuOpen)}>
+        {menuOpen ? <RiCloseFill /> : <RiMenuFill />}
       </div>
-      <div className={ styles.wrapper__logo }>
+      <div className={styles.wrapper__logo}>
         <Image
-          src={ logoWhite }
+          src={logoWhite}
           alt="logo fiumba"
-          layout='fill'
-          objectFit='contain'
+          layout="fill"
+          objectFit="contain"
         />
       </div>
-      <div className={ styles.wrapper__nav}>
+      <div className={styles.wrapper__nav}>
         <ul>
           <li>
             <Link href="/">
@@ -54,7 +51,7 @@ const Nav = () => {
         </ul>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Nav
+export default Nav;

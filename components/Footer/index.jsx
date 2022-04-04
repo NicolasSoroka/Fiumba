@@ -3,7 +3,6 @@ import styles from "./Footer.module.css";
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/Ai";
 import { BsInstagram } from "react-icons/Bs";
 
-
 const Footer = () => {
   return (
     <div className={styles.container}>
@@ -12,7 +11,7 @@ const Footer = () => {
         <div></div>
         <div></div>
       </div>
-      <ul className={ styles.container__social}>
+      <ul className={styles.container__social}>
         <li>
           <a href="#">
             <BsInstagram />
@@ -30,9 +29,15 @@ const Footer = () => {
         </li>
       </ul>
       <ul className={styles.container__menu}>
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Services</a></li>
+        <li>
+          <a href="">Home</a>
+        </li>
+        <li>
+          <a href="">About</a>
+        </li>
+        <li>
+          <a href="">Services</a>
+        </li>
       </ul>
       <p>Since 2019 | All rights reserved.</p>
     </div>
