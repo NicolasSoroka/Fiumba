@@ -5,9 +5,9 @@ import {
   AiOutlineFolderOpen,
   AiOutlineWhatsApp,
   AiOutlineSetting,
-} from "react-icons/Ai";
+} from "react-icons/ai";
 
-import { BsChat } from "react-icons/Bs";
+import { BsChat } from "react-icons/bs";
 import cs from "classnames";
 import { useState } from "react";
 
