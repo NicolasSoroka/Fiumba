@@ -35,17 +35,17 @@ const Nav = () => {
         <ul>
           <li>
             <Link href="/">
-              <a>Sobre nosotros</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/">
               <a>Servicios</a>
             </Link>
           </li>
           <li>
             <Link href="/">
               <a>Contacto</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/">
+              <a>EN</a>
             </Link>
           </li>
         </ul>

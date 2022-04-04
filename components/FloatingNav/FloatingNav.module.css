@@ -2,8 +2,8 @@
   position: fixed;
   bottom: 10px;
   right: 10px;
-  width: 420px;
-  height: 60px;
+  height: 320px;
+  width: 70px;
   background: #fff;
   display: flex;
   justify-content: center;
@@ -13,6 +13,9 @@
 
   &__icons {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 350px;
 
     & > li {
@@ -48,79 +51,25 @@
       color: #222327;
 
       &__active {
-        transform: translateY(-32px);
+        transform: translateY(-10px);
         color: #2196f3;
       }
     }
 
     &__text {
       position: absolute;
-      background: #2196f3;
-      color: #fff;
+      color: #2196f3;
       padding: 2px 7px;
-      border-radius: 12px;
       font-weight: 400;
-      font-size: 0.75em;
+      font-size: 0.7em;
       leter-spacing: 0.05em;
       transition: 0.5s;
       opacity: 0;
       transform: translateY(15px);
 
       &__active {
-        transform: translateY(-3px);
         opacity: 1;
       }
     }
-  }
-}
-
-.indicator {
-  position: absolute;
-  top: -35px;
-  width: 70px;
-  height: 70px;
-  background: #fff;
-  border-radius: 50%;
-  z-index: 1;
-  transition: 0.5s;
-
-  &:before {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: -28px;
-    width: 30px;
-    height: 30px;
-    background: transparent;
-    border-radius: 50%;
-    box-shadow: 15px 18px #fff;
-  }
-
-  &:after {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: 68px;
-    width: 30px;
-    height: 30px;
-    background: transparent;
-    border-radius: 50%;
-    box-shadow: -15px 18px #fff;
-  }
-
-  &__1 {
-    transform: translateX(calc(70px * 0));
-  }
-
-  &__2 {
-    transform: translateX(calc(70px * 1));
-  }
-
-  &__3 {
-    transform: translateX(calc(70px * 2));
-  }
-
-  &__4 {
-    transform: translateX(calc(70px * 3));
   }
 }

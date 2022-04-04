@@ -6,7 +6,6 @@ import {
   AiOutlineWhatsApp,
   AiOutlineSetting,
 } from "react-icons/ai";
-
 import { BsChat } from "react-icons/bs";
 import cs from "classnames";
 import { useState } from "react";
@@ -103,7 +102,7 @@ const FloatingNav = () => {
                 isActive === 3 ? textClasses : styles.container__icons__text
               }
             >
-              Tecnologías
+              Servicios
             </span>
           </a>
         </li>
