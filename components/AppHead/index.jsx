@@ -8,7 +8,7 @@ const AppHead = () => {
         url(&apos;https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap&apos;);
       </style>
       <link rel="icon" href="/favicon.ico" />
-      <title>Fiumba</title>
+      <title>Fiumba | Diseño web</title>
       <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
       <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
       <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
